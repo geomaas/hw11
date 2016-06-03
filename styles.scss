@@ -5,10 +5,11 @@ body {
   background-color: red;
 }
 
+
 // main page styling
 
 
-header {
+.header {
   padding: 0;
   margin: 0;
   display: block;
@@ -53,7 +54,8 @@ header {
 // second page styling
 
 .album-selector {
-  display: none;
+
+  display: inline-block;
   background-color: red;
   width: 20%;
   height: 100%;
@@ -74,7 +76,7 @@ header {
 }
 
 .album-container {
-  display: none;
+  display: inline-block;
   width: 79%;
   background-color: white;
   border: 1px solid black;
@@ -100,7 +102,7 @@ header {
 
 // third page, large photo styling
 .photo-container {
-  display: none;
+  display: inline-block;
 }
 .return {
   display: block;
@@ -113,4 +115,11 @@ header {
   background-color: white;
   width: 75%;
   height: 500px;
+}
+
+.hidden {
+  display: none;
+}
+.active {
+  display: inline-block;
 }

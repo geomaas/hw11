@@ -8,11 +8,11 @@
   </head>
   <body>
     <!-- main page -->
-    <header>
+    <header class="header active">
       <h1>My Albums</h1>
     </header>
     <!-- side bar for second page -->
-    <aside class="album-selector">
+    <aside class="album-selector hidden">
       <ul>
         <li>Album 1</li>
         <li>Album 2</li>
@@ -24,63 +24,50 @@
       </ul>
    </aside>
    <!-- main page photo albums-->
-    <div class="main-container">
+    <div class="main-container active">
       <div class="row">
-        <div class="albums">
-          <img src="album list/album 1/dsc_0114_4537141444_o.jpg" alt="" />
-          <h3>Album 1</h3>
+
+
+        <!-- <div class="albums">
+
         </div>
         <div class="albums">
-          <img src="album list/album 2/img_2436jpg_3457343096_o.jpg" alt="" />
-          <h3>Album 2</h3>
+
         </div>
         <div class="albums">
-          <img src="album list/album 3/dsc_0028_6072385880_o.jpg" alt="" />
-          <h3>Album 3</h3>
+
         </div>
-      </div>
-      <div class="row">
+
         <div class="albums">
-          <h3>Album 4</h3>
+
         </div>
         <div class="albums">
-          <h3>Album 5</h3>
+
         </div>
         <div class="albums">
-          <h3>Album 6</h3>
-        </div>
+
+        </div> -->
       </div>
     </div>
 
     <!-- second page, album contents -->
-    <div class="album-container">
-      <div class="row">
+    <div class="album-container ">
+      <!-- <div class="row">
         <div class="thumbnail">
-          <h3>photo 1</h3>
-        </div>
-        <div class="thumbnail">
-          <h3>photo 2</h3>
-        </div>
-        <div class="thumbnail">
-          <h3>photo 3</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="albums">
           <h3>photo 4</h3>
         </div>
-        <div class="albums">
+        <div class="thumbnail">
           <h3>photo 5</h3>
         </div>
-        <div class="albums">
+        <div class="thumbnail">
           <h3>photo 6</h3>
         </div>
-      </div>
+      </div> -->
     </div>
 
 <!-- third page, large photo -->
-    <div class="photo-container">
-      
+    <div class="photo-container hidden">
+
       <div class="return">
         <h1>return to album</h1>
       </div>
@@ -94,6 +81,7 @@
     </div>
 
     <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script src="data.js" charset="utf-8"></script>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
