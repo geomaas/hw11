@@ -2,7 +2,7 @@
 var albumListStr = '<div class="row">';
 albumGroup.forEach(function(element,idx) {
   albumListStr += `
-  <div class="albums">
+  <div class="albums" id="${idx}">
   <img src="${element.cover}" alt="${element.title}" />
   <h3>${element.title}</h3>
   </div>
@@ -17,9 +17,10 @@ $('.main-container').append(albumListStr);
 
 $(".albums").on("click",function(event){
   event.preventDefault();
+  console.log(albumGroup[event.currentTarget.id]);
 var photoListStr = '<div class="row">';
 albumGroup[0].pictures.forEach(function(element,idx) {
-    console.log("THIS IS ME", element)
+    // console.log("THIS IS ME", element)
   photoListStr += `
   <div class="thumbnail">
   <img src="${element.pic}" alt="" />
@@ -153,9 +154,12 @@ $('.album-container').append(photoListStr);
 
 $(".thumbnail").on("click",function(event){
   event.preventDefault();
-  var clicked = $(this).find('img');
+  var clicked = $(this).find('<img>').text();
 
   console.log("this is me",clicked);
+  $(".album-selector").removeClass("active").addClass('hidden');
+  $('.album-container').removeClass('active').addClass('hidden');
+
   });
   // var photStr = '<div class="photo-title">';
 //   photoStr += `
