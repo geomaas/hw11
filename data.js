@@ -68,7 +68,7 @@ var albumGroup = [
   },
   {
     title: "Drone-Photos",
-    cover: "albumlist/album6/DJI_0054\ copy.JPG",
+    cover: "albumlist/album6/DJI_0002copy.JPG",
     pictures: [
 
       {pic:"albumlist/album6/DJI_0002 copy.JPG"},
