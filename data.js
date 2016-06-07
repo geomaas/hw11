@@ -71,11 +71,11 @@ var albumGroup = [
     cover: "albumlist/album6/DJI_0002copy.JPG",
     pictures: [
 
-      {pic:"albumlist/album6/DJI_0002 copy.JPG"},
-      {pic:"albumlist/album6/DJI_0003 copy.JPG"},
-      {pic:"albumlist/album6/DJI_0010 copy.JPG"},
+      {pic:"albumlist/album6/DJI_0002copy.JPG"},
+      {pic:"albumlist/album6/DJI_0003copy.JPG"},
+      {pic:"albumlist/album6/DJI_0010copy.JPG"},
       {pic:"albumlist/album6/DJI_00021copy.JPG"},
-      {pic:"albumlist/album6/DJI_0054 copy.JPG"},
+      {pic:"albumlist/album6/DJI_0054copy.JPG"},
       {pic:"albumlist/album6/holycitycontainer.JPG"},
     ]
   },
