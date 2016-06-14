@@ -60,7 +60,7 @@ $("body").on("click",'.albums',function(event){
   // console.log(window.glob);
   var photoListStr = '<div class="row">';
   var photoList = albumGroup.find(function(element) { return element.title === glob.find('h3').text().trim() });
-  console.log(photoList.pictures);
+  // console.log(photoList.pictures);
   photoList.pictures.forEach(function(element,idx){
     photoListStr += `
     <div class="thumbnail">
@@ -76,4 +76,35 @@ $("body").on("click",'.albums',function(event){
   });
 
 $('.album-container').append(photoListStr);
+});
+
+
+$("body").on("click",".thumbnail",function(event){
+  event.preventDefault();
+  console.log(this);
+  var albumListStr = this;
+  $('.photo-container .large-photo').append(albumListStr);
+
+
+  $(".photo-container").removeClass("hidden")
+  $('.album-container').removeClass('active').addClass('hidden');
+  $('.album-selector').removeClass('active').addClass('hidden');
+});
+
+$("body").on("click",".return",function(event){
+  event.preventDefault();
+  console.log(this);
+  $('.photo-container').removeClass('active').addClass('hidden');
+  $('.album-container').removeClass('hidden').addClass('active');
+  $('.album-selector').removeClass('hidden').addClass('active');
+
+});
+
+$("body").on("click",".album-selector ul li",function(event){
+  event.preventDefault();
+  console.log(this);
+  // $('.main-container').removeClass('hidden').addClass('active');
+  // $('.album-container').removeClass('active').addClass('hidden');
+  // $('.album-selector').removeClass('active').addClass('hidden');
+
 });
